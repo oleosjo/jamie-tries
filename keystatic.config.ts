@@ -4,7 +4,10 @@ export default config({
   storage: import.meta.env.PROD
     ? {
         kind: "github",
-        repo: "oleosjo/jamie-tries", // <-- CHANGE THIS to your actual repo info!
+        repo: {
+          owner: "oleosjo",
+          name: "jamie-tries",
+        },
       }
     : {
         kind: "local",

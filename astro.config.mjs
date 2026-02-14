@@ -7,8 +7,8 @@ import netlify from "@astrojs/netlify";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://jamietries.netlify.app",
   output: "server",
   integrations: [react(), markdoc(), keystatic()],
   adapter: netlify(),
 });
-
