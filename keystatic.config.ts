@@ -1,17 +1,13 @@
 import { config, fields, collection } from "@keystatic/core";
 
 export default config({
-  storage: import.meta.env.PROD
-    ? {
-        kind: "github",
-        repo: {
-          owner: "oleosjo",
-          name: "jamie-tries",
-        },
-      }
-    : {
-        kind: "local",
-      },
+  storage: {
+    kind: "github",
+    repo: {
+      owner: "oleosjo",
+      name: "jamie-tries",
+    },
+  },
   collections: {
     posts: collection({
       label: "Posts",
